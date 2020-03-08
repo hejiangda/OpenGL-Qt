@@ -1,9 +1,6 @@
 #version 330 core
-out vec4 FragColor;
-in vec2 TexCoords;
-uniform sampler2D texture;
-
-void main(void)
-{
-    FragColor = texture2D(texture,TexCoords);
+smooth in vec4 vSmoothColor;
+layout(location=0) out vec4 vFragColor;
+void main() {
+    vFragColor = vSmoothColor;
 }

@@ -1,11 +1,10 @@
 #version 330 core
-layout(location = 0) in vec3 aPos;
-layout(location = 1) in vec2 aTexCoords;
+layout(location = 0) in vec3 vVertex;
+layout(location = 1) in vec3 vColor;
 
-uniform mat4 model,view,projection;
-out vec2 TexCoords;
-void main(void)
-{
-    gl_Position = projection*view*model*vec4(aPos,1.0);
-    TexCoords=aTexCoords;
+smooth out vec4 vSmoothColor;
+uniform mat4 MVP;
+void main() {
+    vSmoothColor = vec4(vColor,1);
+    gl_Position = MVP*vec4(vVertex,1);
 }

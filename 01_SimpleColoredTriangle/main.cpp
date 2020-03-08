@@ -20,12 +20,12 @@ int main(int argc, char** argv)
     window.show();
 
     //动画
-    QPropertyAnimation animation(&scene, "val");
-    animation.setDuration(20000);
-    animation.setStartValue(0);
-    animation.setKeyValueAt(0.5, 360);
-    animation.setEndValue(0);
-    animation.setLoopCount(-1);
-    animation.start();
+//    QPropertyAnimation animation(&scene, "val");
+//    animation.setDuration(20000);
+//    animation.setStartValue(0);
+//    animation.setKeyValueAt(0.5, 360);
+//    animation.setEndValue(0);
+//    animation.setLoopCount(-1);
+//    animation.start();
     return app.exec();
 }

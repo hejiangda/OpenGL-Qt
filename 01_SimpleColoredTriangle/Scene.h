@@ -30,7 +30,7 @@ private:
     QOpenGLShaderProgram m_shader;
     qreal m_val;
 
-    GLuint m_VAO, m_VBO;
+    GLuint m_VAO, m_VBO,m_VBOIndices;
     QOpenGLTexture* m_texture;
 
     QVector3D m_cameraPos, m_cameraFront, m_cameraUp;
