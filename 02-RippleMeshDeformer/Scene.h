@@ -32,11 +32,11 @@ private:
 
     GLuint m_VAO, m_VBO,m_VBOIndices;
     QOpenGLTexture* m_texture;
-    const int NUM_X = 240; //total quads on X axis
-    const int NUM_Z = 240; //total quads on Z axis
+    const int NUM_X = 40; //total quads on X axis
+    const int NUM_Z = 40; //total quads on Z axis
 
-    const float SIZE_X = 4; //size of plane in world space
-    const float SIZE_Z = 4;
+    const float SIZE_X = 1; //size of plane in world space
+    const float SIZE_Z = 1;
     const float HALF_SIZE_X = SIZE_X/2.0f;
     const float HALF_SIZE_Z = SIZE_Z/2.0f;
     const int TOTAL_INDICES = NUM_X*NUM_Z*2*3;

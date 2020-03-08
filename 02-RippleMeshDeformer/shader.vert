@@ -11,6 +11,6 @@ void main() {
     float distance=length(vVertex);
     float y=amplitude*sin(-PI*distance*frequency+time);
     color=vec4(vVertex.x,y,vVertex.z,1);
-    gl_Position=MVP*vec4(vVertex.x,y,vVertex.z,1);
+    gl_Position=MVP*vec4(vVertex.x,vVertex.y,vVertex.z,1);
 
 }

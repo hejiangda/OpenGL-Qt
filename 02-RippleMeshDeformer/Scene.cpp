@@ -43,6 +43,7 @@ void Scene::initialize()
     for( j=0;j<=NUM_Z;j++) {
         for( i=0;i<=NUM_X;i++) {
             vertices[count++] = QVector3D( ((float(i)/(NUM_X-1)) *2-1)* HALF_SIZE_X, 0, ((float(j)/(NUM_Z-1))*2-1)*HALF_SIZE_Z);
+            qDebug()<<vertices[count-1];
         }
     }
 
